@@ -1,0 +1,4 @@
+baseURL = "https://datasketch.github.io/palmira/"
+languageCode = "es"
+title = "Alcaldía de Palmira"
+publishDir = "docs"

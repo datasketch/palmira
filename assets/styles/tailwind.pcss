@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    src: url(../fonts/Helvetica-Bold.ttf);
+  }
+  @font-face {
+    font-family: Trebuchet;
+    font-weight: 400;
+    src: url(../fonts/Trebuchet.ttf);
+  }
+}
+
+@layer components {
+  .menu-nav {
+    @apply text-sm uppercase text-green-munsell font-helvetica hidden;
+  }
+  .opened {
+    @apply flex flex-col absolute left-0 bg-white w-full px-4 py-2 items-start;
+    top: 100%;
+  }
+  .opened > * ~ * {
+    @apply mt-3;
+  }
+  @screen lg {
+    .menu-nav {
+      @apply flex flex-row static p-0 items-center w-auto;
+    }
+    .opened > * ~ * {
+      @apply mt-0;
+    }
+    .menu-nav > * ~ * {
+      @apply ml-4;
+    }
+  }
+  @screen xl {
+    .menu-nav > * ~ * {
+      @apply ml-8;
+    }
+  }
+}
