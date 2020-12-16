@@ -1,40 +1,40 @@
 {{ define "main" }}
 <section style="background-image: url({{"images/bg.png"|absURL}});" class="bg-center bg-cover bg-no-repeat px-4">
   <div class="w-full mx-auto md:w-10/12 py-32">
-    <div class="w-full lg:w-1/2 lg:mr-auto">
+    <div class="w-full lg:w-3/4 lg:mr-auto">
       <h1 class="font-pt font-black text-4xl uppercase text-indigo-dye leading-tight lg:text-4xl xl:text-5xl">
-        <span class="block text-green-munsell">Título importante</span>
-        <span class="text-indian-red">para resaltar</span>
+        <span class="block text-green-munsell">Inversión de recursos y finanzas públicas</span>
+        <span class="text-indian-red">en Palmira</span>
       </h1>
-      <div class="font-trebuchet text-dark-jungle-green font-roboto space-y-4 mt-8 lg:text-lg">
-        <p>Es un instrumento normativo que garantiza la participación democrática de la oposición al gobierno de turno en los diferentes niveles territoriales.</p>
-        <p>El estatuto determina los recursos, las rutas de acción, las garantías y los medios que les posibilitan desempeñar una función crítica y alternativa a las acciones de la rama ejecutiva en el poder.
+      <div class="font-trebuchet text-dark-jungle-green font-roboto space-y-4 mt-8 lg:text-lg max-w-md">
+        <p>
+          Conoce cómo se planeó y cómo se están invirtiendo los recursos públicos en diferentes sectores de la Alcaldía de Palmira. Este proyecto disponibiliza la información del Plan Anual de Adquisiciones, pasando por los contratos públicos firmados por el municipio, hasta la ejecución presupuestal del mismo.
         </p>
       </div>
     </div>
   </div>
 </section>
 <!---->
-<section class="px-4 py-12">
+<section class="px-4 py-12" id="proyecto">
   <div class="w-full mx-auto flex flex-col-reverse md:w-10/12 md:flex-row md:items-start md:space-x-8">
     <div class="w-full mt-4 md:w-1/2 md:mt-0">
       <img class="mx-auto" src="{{"images/graphic-1.png"|absURL}}" alt="">
     </div>
     <div class="w-full md:w-1/2">
       <div class="md:max-w-md md:ml-auto">
-        <h3 class="text-green-munsell text-3xl uppercase font-bold lg:text-4xl">Subtítulo</h3>
-        <p class="font-trebuchet text-dark-jungle-green mt-6 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor quisque cras fusce vivamus quis eu. Placerat sit posuere lectus varius sagittis diam. Ut id magna tempus, egestas iaculis turpis in aliquam nibh. Consectetur tristique ut malesuada nam. Diam facilisis in faucibus commodo amet, vitae diam odio. Sed dictum amet, bibendum risus in. Semper non a interdum velit egestas faucibus. Turpis in donec magna mattis cras at.</p>
+        <h3 class="text-green-munsell text-3xl uppercase font-bold lg:text-4xl leading-tight">¿Por qué este proyecto?</h3>
+        <p class="font-trebuchet text-dark-jungle-green mt-6 text-sm lg:text-base">Este proyecto surge a partir del impulso por tomar cada vez mejores decisiones ciudadanas basadas en los datos y el acceso a la información pública de finanzas y gastos de la Alcaldía de Palmira. Especialmente busca contribuir a la transparencia en el sector público y al uso eficiente de los recursos con control social en el municipio.</p>
       </div>
     </div>
   </div>
 </section>
 <!---->
-<section class="bg-white px-4 py-12">
+<section class="bg-white px-4 py-12 relative mt-48" id="datos">
   <div class="w-full mx-auto flex flex-col md:w-10/12 md:flex-row md:items-start md:space-x-8 relative">
     <div class="w-full md:w-1/2">
       <div class="md:max-w-md">
-        <h3 class="text-yellow-orange text-3xl uppercase font-bold lg:text-4xl">Subtítulo</h3>
-        <p class="font-trebuchet text-white mt-6 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor quisque cras fusce vivamus quis eu. Placerat sit posuere lectus varius sagittis diam. Ut id magna tempus, egestas iaculis turpis in aliquam nibh. Consectetur tristique ut malesuada nam. Diam facilisis in faucibus commodo amet, vitae diam odio. Sed dictum amet, bibendum risus in. Semper non a interdum velit egestas faucibus. Turpis in donec magna mattis cras at.</p>
+        <h3 class="text-yellow-orange text-3xl uppercase font-bold lg:text-4xl leading-tight">De qué datos hablamos</h3>
+        <p class="font-trebuchet text-dark-jungle-green mt-6 text-sm lg:text-base">La información contenida en este proyecto proviene de los datos abiertos de contratos públicos del Estado colombiano de la plataforma SECOP, los módulos de planeación y contratación de la Alcaldía (SIIF), el Plan Anual de Adquisiciones y la ejecución presupuestal de este mismo municipio a partir del año 2020. Con el fin de darlo a conocer a la ciudadanía y entes interesados.</p>
       </div>
     </div>
     <div class="w-full mt-4 md:w-1/2 md:mt-0">
@@ -43,18 +43,20 @@
   </div>
 </section>
 <!---->
-<section class="py-12 text-center">
+<section class="py-12 text-center" id="visualizador">
   <h3 class="text-green-munsell text-3xl uppercase font-bold lg:text-4xl">Explora los datos</h3>
   <div class="h-screen mt-4"></div>
 </section>
 <!---->
-<section class="bg-white px-4 py-12">
+<section class="bg-white px-4 py-12" id="descarga">
   <div class="w-full mx-auto flex flex-col md:w-10/12 md:flex-row md:items-start md:space-x-8">
     <div class="w-full md:w-1/2">
       <div class="md:max-w-md">
-        <h3 class="text-green-munsell text-3xl uppercase font-bold lg:text-4xl">Subtítulo</h3>
-        <p class="text-dark-jungle-green mt-6 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor quisque cras fusce vivamus quis eu. Placerat sit posuere lectus varius sagittis diam. Ut id magna tempus, egestas iaculis turpis in aliquam nibh. Consectetur tristique ut malesuada nam. Diam facilisis in faucibus commodo amet, vitae diam odio. Sed dictum amet, bibendum risus in. Semper non a interdum velit egestas faucibus. Turpis in donec magna mattis cras at.</p>
-        <a href="" class="inline-block mt-6 uppercase bg-indian-red text-white rounded font-bold text-lg px-3 py-2 lg:text-xl">Explora los datos</a>
+        <h3 class="text-green-munsell text-3xl uppercase font-bold lg:text-4xl leading-tight">Descarga de datos</h3>
+        <p class="font-trebuchet text-dark-jungle-green mt-6 text-sm lg:text-base">
+          Los datos utilizados en este proyecto están disponibles para su descarga y verificación, para que la ciudadanía pueda realizar sus propias visualizaciones y responder preguntas asociadas a la información publicada aquí.
+        </p>
+        <a href="" class="inline-block mt-6 uppercase bg-indian-red text-white rounded font-bold text-lg px-3 py-2 lg:text-xl">Descarga los datos</a>
       </div>
     </div>
     <div class="w-full mt-4 md:w-1/2 md:mt-0">
